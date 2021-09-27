@@ -7,6 +7,8 @@ import os
 from admins.models import Product, Category, Cart, OrderSummary
 
 
+
+
 def store(request):
     products = Product.objects.all()
     categories = Category.objects.all()
@@ -64,3 +66,5 @@ def addToCart(request, product_id):
 
 def Check(request):
     return render(request, 'whole/check.html')
+
+
